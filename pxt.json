@@ -1,7 +1,7 @@
 {
     "name": "power",
     "version": "0.2.1",
-    "description": "Power saving. micro:bit (V2) only.",
+    "description": "Power saving. micro:bit (V2) only. - Beta",
     "dependencies": {
         "core": "*"
     },
