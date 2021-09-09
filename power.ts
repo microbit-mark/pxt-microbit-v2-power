@@ -37,6 +37,7 @@ const enum LowPowerEnable {
 //% block="Power"
 //% icon="\uf011"
 //% color=#AA278D
+//% parts=”v2”
 namespace power {
 
 /**
