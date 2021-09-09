@@ -37,7 +37,7 @@ const enum LowPowerEnable {
 //% block="Power"
 //% icon="\uf011"
 //% color=#AA278D
-//% parts=”v2”
+//% parts="v2"
 namespace power {
 
 /**
@@ -48,6 +48,7 @@ namespace power {
 //% group="micro:bit (V2)"
 //% weight=700
 //% block="request low power||and $mode"
+//% parts="v2"
 //% shim=power::lowPowerRequest
 export function lowPowerRequest(mode?: LowPowerMode): void {
     basic.pause(0)
@@ -62,6 +63,7 @@ export function lowPowerRequest(mode?: LowPowerMode): void {
 //% weight=600
 //% interval.shadow=longTimePicker
 //% block="request low power for $interval ms"
+//% parts="v2"
 //% shim=power::lowPowerPause
 export function lowPowerPause(interval: number): void {
     basic.pause(interval)
