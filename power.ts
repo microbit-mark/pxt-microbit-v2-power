@@ -37,7 +37,6 @@ const enum LowPowerEnable {
 //% block="Power"
 //% icon="\uf011"
 //% color=#AA278D
-//% parts="v2"
 namespace power {
 
 /**
@@ -77,6 +76,7 @@ export function lowPowerPause(interval: number): void {
 //% help=power/low-power-enable
 //% weight=500
 //% block="low power %enable"
+//% parts="v2"
 //% shim=power::lowPowerEnable
 export function lowPowerEnable(enable: LowPowerEnable): void {
     return
@@ -103,6 +103,7 @@ export function lowPowerIsEnabled(): boolean {
 //% interval.shadow=longTimePicker
 //% afterOnStart=true
 //% block="full power every $interval ms"
+//% parts="v2"
 //% shim=power::fullPowerEvery
 export function fullPowerEvery(interval: number, code: () => void): void {
     loops.everyInterval(interval, code)
@@ -138,6 +139,7 @@ export function fullPowerSourceIsEnabled(source: FullPowerSource): boolean {
 //% group="micro:bit (V2)"
 //% weight=900
 //% block="full power on %source"
+//% parts="v2"
 //% shim=power::fullPowerOn
 export function fullPowerOn(source: FullPowerSource): void {
     return
