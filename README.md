@@ -9,7 +9,7 @@ This extension might be useful when you want to conserve battery power, such as 
 
 ### Put the micro:bit to sleep in a low power mode 💤
 
-The ``||power.lowPowerRequest||`` block will ask the micro:bit to switch to low power mode at the next opportunity, such as when the current code operation has been allowed to complete, or inside ``||basic.pause(ms)||``.
+The ``||power:low Power Request||`` block will ask the micro:bit to switch to low power mode at the next opportunity, such as when the current code operation has been allowed to complete, or inside ``||basic:pause(ms)||``.
 
 ```blocks
 input.onButtonPressed(Button.B, function () {
