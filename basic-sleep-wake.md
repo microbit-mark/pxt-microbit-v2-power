@@ -1,3 +1,4 @@
+
 # Pressure switch alarm
 
 ## Introduction Step @showdialog
@@ -63,6 +64,7 @@ power.fullPowerOn(FullPowerSource.P0)
 Click ``|Download|`` to transfer your code. 
 
 When the micro:bit has sounded the alarm it will enter low power mode until you touch Pin 0 to wake it up again.
+
 
 ## Step 5: Make the alarm @showdialog
 
