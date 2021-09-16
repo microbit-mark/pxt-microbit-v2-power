@@ -1,4 +1,5 @@
-# Intruder alarm - Create an alarm that wakes up the micro:bit when someone steps on a pressure switch.
+
+# Pressure switch alarm
 
 ## Introduction Step @showdialog
 You can use the ``||power:Power||`` blocks to control when your micro:bit goes to sleep in low power mode and wakes up to full power mode.
@@ -7,11 +8,8 @@ This will help save on batteries when you are running a progarm for a long time.
 
 You can tell that the micro:bit is saving battery power when the red power LED on the rear of the board turns off during low-power mode and on during full-power mode.
 
-### ~reminder
-
 #### Simulator support
 The power saving extension is not yet supported in the MakeCode simulator, so you will need to flash the program to the micro:bit to try it out.
-### ~
 
 ![micro:bit power LED](https://microbit-foundation.github.io/pxt-microbit-v2-power/docs/static/power-led.png)
 
@@ -47,9 +45,11 @@ input.onPinPressed(TouchPin.P0, function () {
 ```
 
 ## Step 3: Tell the micro:bit how to wake up
-Good work. You've now told the micro:bit when to go to sleep, but it doesn't yet know how to wake up. When you use the ``||Power||`` blocks to put the micro:bit to sleep, you will always need to tell it how to wake up again, otherwise it will just ignore you and stay awake!
+Good work. You've now told the micro:bit when to go to sleep, but it doesn't yet know how to wake up.
 
-Drag a ``||power:full power on pin P0||`` block into ``||basic:on start||`` to complete your program.
+When you use the ``||Power||`` blocks to put the micro:bit to sleep, you will always need to tell it how to wake up again, otherwise it will just ignore you and stay awake!
+
+Drag ``||basic:on start||`` into the workspace and then add  ``||power:full power on pin P0||``underneath ``on start`` to tell the micro:bit to wake up when Pin 0 is touched.
 
 ```blocks
 input.onPinPressed(TouchPin.P0, function () {
@@ -63,12 +63,13 @@ power.fullPowerOn(FullPowerSource.P0)
 ## Step 4: Try it out
 Click ``|Download|`` to transfer your code. 
 
-When the micro:bit has sounded the alarm it will enter low power mode until you touch pin ``0`` to wake it up again.
+When the micro:bit has sounded the alarm it will enter low power mode until you touch Pin 0 to wake it up again.
+
 
 ## Step 5: Make the alarm @showdialog
 
 ![micro:bit connected to pressure sensor](https://cdn.sanity.io/images/ajwvhvgo/production/b7072e2101643d75cd09dd89b0dd289dbbea33cc-600x450.jpg)
 
-Make a pressure input switch out of cardboard and tin foil like in the picture. Connect the two foil pads on one side to pins ``0`` and ``GND`` on the micro:bit. When you step on it, the foil on the top completes an electrical circuit, and it sounds the alert.
+Now you have your program, try making a pressure input switch out of cardboard and tin foil like in the picture. Connect the two foil pads on one side to pins ``0`` and ``GND`` on the micro:bit. When you step on the switch, the foil on the top completes an electrical circuit, and it sounds the alert.
 
 More information is available in the [Make it: Code it pressure switch alarm project](https://microbit.org/projects/make-it-code-it/pressure-switch-alarm/).
