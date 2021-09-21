@@ -3,7 +3,7 @@
 ## Introduction Step @showdialog
 You can use the ``||power:Power||`` blocks to control when your micro:bit goes to sleep in low power mode and wakes up to full power mode.
 
-This will help save on batteries when you are running a progarm for a long time.
+This will help save on batteries when you are running a program for a long time.
 
 You can tell that the micro:bit is saving battery power as the red power LED on the rear of the board will turn off during low-power mode and on during full-power mode.
 
